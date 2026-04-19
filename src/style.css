@@ -71,7 +71,6 @@ a {
   color: white;
   box-shadow:0 4px 4px rgb(80, 80, 80);
   box-sizing: border-box;
-  overflow: hidden;
 }
 
 .move-card img:hover {
@@ -82,7 +81,9 @@ a {
   width: 100%;
   border-radius: 8px;
   object-fit: cover;
-  transition: all .2s;
+  transition: .2s;
+  transform: scale(1);
+  overflow: hidden;
 }
 
 .movie-card h3 {
