@@ -25,7 +25,6 @@ const results = document.getElementById("results");
 const viewBtn = document.getElementById("view-list");
 const tierlist = document.getElementById("tierlist");
 
-document.getElementById("tierlist").style.display = "none";
 
 // for search button
 searchBtn.addEventListener("click", function () {
@@ -72,7 +71,7 @@ searchBtn.addEventListener("click", function () {
             title: movie.title,
             poster: movie.poster_path
           });
-          
+
           localStorage.setItem("tierData", JSON.stringify(tierData));
 
           renderTierList();
