@@ -53,12 +53,13 @@ h1 {
   gap: 10px;
   padding: 15px;
   background-color: rgb(80, 80, 80);
-  width: 90%;
+  width: 100%;
   height: auto;
   margin: auto;
   overflow-y: scroll;
   outline: 3px solid red;
-
+  align-items: start;
+  justify-items: center;
 }
 
 .movie-card {
@@ -66,9 +67,7 @@ h1 {
   text-align: center;
   color: white;
   box-shadow:0 4px 4px rgb(80, 80, 80);
-  width: 100%;
   box-sizing: border-box;
-  margin: auto;
 }
 
 .movie-card img {
