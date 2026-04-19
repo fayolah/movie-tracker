@@ -60,7 +60,6 @@ searchBtn.addEventListener("click", function () {
       console.error("Error:", err);
     });
 
-    document.getElementById("results").style.display = "block";
 });
 
 // view list //
