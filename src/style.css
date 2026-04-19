@@ -1,0 +1,47 @@
+/* fonts */
+
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.metamorphous-regular {
+  font-family: "Metamorphous", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* ---- */
+
+body {
+    background-color:rgb(49, 49, 49);
+}
+
+.nav-menu {
+    font-family: "Metamorphous";
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+    color:rgb(216, 222, 255);
+    text-shadow: 1px 2px 2px rgb(48, 57, 108);
+}
+
+:visited {
+  color:rgb(189, 198, 255);
+  text-shadow: 1px 2px 2px rgb(48, 57, 108);
+}
+
+h1 {
+    font-family: "Sekuya";
+    color: rgb(0, 23, 151);
+    text-align: center;
+    text-shadow: 1px 3px 3px rgb(11, 12, 35);
+    font-size: 3rem;
+    -webkit-text-stroke: .5px rgb(116, 104, 255);
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+#search-container {
+    text-align: center;
+}
