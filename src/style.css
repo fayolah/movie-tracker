@@ -49,11 +49,11 @@ h1 {
 /* RESULTS */
 #results {
   display: grid;
-  grid-template-columns: repeat(3, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 10px;
   padding: 15px;
   background-color: rgb(80, 80, 80);
-  width: 100%;
+  width: 90%;
   height: auto;
   margin: auto;
   overflow-y: scroll;
@@ -61,6 +61,8 @@ h1 {
 }
 
 .movie-card {
+  width: 100%;
+  height: auto;
   padding: 10px;
   text-align: center;
   color: white;
