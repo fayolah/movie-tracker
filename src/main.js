@@ -4,6 +4,8 @@ const search = document.getElementById("movie-search");
 const searchBtn = document.getElementById("search-btn");
 const results = document.getElementById("results");
 
+document.getElementById("results").style.display = "none";
+
 searchBtn.addEventListener("click", function () {
   const query = search.value;
   const url = `https://api.themoviedb.org/3/search/movie?api_key=${import.meta.env.VITE_API_KEY}&query=${query}`;
@@ -52,5 +54,7 @@ searchBtn.addEventListener("click", function () {
     .catch(err => {
       console.error("Error:", err);
     });
+
+    document.getElementById("results").style.display = "block";
 });
 
