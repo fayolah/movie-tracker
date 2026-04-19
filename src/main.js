@@ -10,21 +10,6 @@ const tierData = {
   "F Tier": []
 };
 
-const savedData = localStorage.getItem("tierData");
-
-if (savedData) {
-  Object.assign(tierData, JSON.parse(savedData));
-  renderTierList();
-}
-
-
-
-const search = document.getElementById("movie-search");
-const searchBtn = document.getElementById("search-btn");
-const results = document.getElementById("results");
-const viewBtn = document.getElementById("view-list");
-const tierlist = document.getElementById("tierlist");
-
 function renderTierList() {
   tierlist.innerHTML = "";
 
@@ -49,7 +34,9 @@ function renderTierList() {
       movieDiv.classList.add("tier-movie");
 
       const img = document.createElement("img");
-      img.src = movie.poster;
+      img.src = movie.poster
+        ? `https://image.tmdb.org/t/p/w200${movie.poster}`
+        : "https://via.placeholder.com/200x300?text=No+Image";
 
       const title = document.createElement("h3");
       title.textContent = movie.title;
@@ -62,6 +49,22 @@ function renderTierList() {
     tierlist.appendChild(row);
   }
 }
+
+const savedData = localStorage.getItem("tierData");
+
+if (savedData) {
+  Object.assign(tierData, JSON.parse(savedData));
+  renderTierList();
+}
+
+
+
+const search = document.getElementById("movie-search");
+const searchBtn = document.getElementById("search-btn");
+const results = document.getElementById("results");
+const viewBtn = document.getElementById("view-list");
+const tierlist = document.getElementById("tierlist");
+
 
 // for search button
 searchBtn.addEventListener("click", function () {
