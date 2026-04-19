@@ -6,7 +6,6 @@ const results = document.getElementById("results");
 const viewBtn = document.getElementById("view-list");
 const tierlist = document.getElementById("tierlist");
 
-document.getElementById("results").style.display = "none";
 document.getElementById("tierlist").style.display = "none";
 
 
