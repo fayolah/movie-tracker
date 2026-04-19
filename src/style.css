@@ -54,6 +54,12 @@ h1 {
   padding: 15px;
   background-color: rgb(80, 80, 80);
   width: 90%;
-  border-radius: 3%;
   margin: auto;
+}
+
+.movie-card {
+  padding: 10px;
+  text-align: center;
+  color: white;
+  box-shadow:0 4px 4px rgb(80, 80, 80)
 }
