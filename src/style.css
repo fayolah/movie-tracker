@@ -50,6 +50,7 @@ h1 {
 #results {
   display: grid;
   grid-template-columns: repeat(autofill, minmax(100px, 1fr));
+  grid-template-rows: auto 1fr auto;
   gap: 20px;
   padding: 15px;
   background-color: rgb(80, 80, 80);
@@ -65,7 +66,7 @@ h1 {
 }
 
 .movie-card img {
-  width: 100%;
+  width: 33%;
   border-radius: 8px;
 }
 
