@@ -31,7 +31,7 @@ searchBtn.addEventListener("click", function () {
 
         const select = document.createElement("select");
 
-        ["S", "A", "B", "C", "D", "E", "F"].forEach(tier => {
+        ["S Tier", "A Tier", "B Tier", "C Tier", "D Tier", "E Tier", "F Tier"].forEach(tier => {
           const option = document.createElement("option");
           option.value = tier;
           option.textContent = tier;
