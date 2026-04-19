@@ -81,3 +81,7 @@ h1 {
   transform: sale(1);
   transition: 0.2s;
 }
+
+.hidden {
+  display:none;
+}

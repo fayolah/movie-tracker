@@ -7,19 +7,19 @@
     <meta charset="UTF-8">
     <title>Movie Tracker</title>
     <link rel="stylesheet" href="src/style.css">
-    <script type="module" src="src/main.js"></script>
+    <script type="module" src="/src/main.js"></script>
 </head>
 
 <body>
-    <div class="nav-menu">
-        <nav> <a href="index.html">Home</a> <a href="/movie-tracker/tierlist.html">Lists</a></nav>
-    </div>
     <h1>Movie Tracker</h1>
     <div id="search-container">
         <input type="text" id="movie-search" placeholder="Search for a movie...">
         <button type="submit" id="search-btn">Search!</button>
+        <button id="view-list">View Tierlist!</button>
     </div>
     <div id="results"></div>
+
+    <div id="tierlist" class="hidden"></div>
 
 </body>
 </html>

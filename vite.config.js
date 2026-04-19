@@ -1,7 +1,5 @@
-import { defineConfig } from 'vite'
+import { defineConfig } from "vite";
 
 export default defineConfig({
-  // Your configuration options here
-  base:"/movie-tracker",
-  tierlist:"tierlist.html"
-})
+  base: "/movie-tracker/"
+});
