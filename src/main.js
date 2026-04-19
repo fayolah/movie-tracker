@@ -10,6 +10,13 @@ const tierData = {
   "F Tier": []
 };
 
+const search = document.getElementById("movie-search");
+const searchBtn = document.getElementById("search-btn");
+const results = document.getElementById("results");
+const viewBtn = document.getElementById("view-list");
+const tierlist = document.getElementById("tierlist");
+
+
 function renderTierList() {
   tierlist.innerHTML = "";
 
@@ -59,11 +66,6 @@ if (savedData) {
 
 
 
-const search = document.getElementById("movie-search");
-const searchBtn = document.getElementById("search-btn");
-const results = document.getElementById("results");
-const viewBtn = document.getElementById("view-list");
-const tierlist = document.getElementById("tierlist");
 
 
 // for search button
