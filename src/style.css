@@ -53,7 +53,7 @@ a {
 /* RESULTS */
 #results {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(175px, 1fr));
   gap: 10px;
   padding: 15px;
   background-color: rgb(80, 80, 80);
@@ -71,11 +71,17 @@ a {
   color: white;
   box-shadow:0 4px 4px rgb(80, 80, 80);
   box-sizing: border-box;
+  transition: all .2s;
+}
+
+.move-card img:hover {
+  transform: scale(1.5)
 }
 
 .movie-card img {
   width: 100%;
   border-radius: 8px;
+  overflow: hidden;
 }
 
 .movie-card h3 {
