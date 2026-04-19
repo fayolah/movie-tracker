@@ -74,7 +74,7 @@ a {
   overflow: hidden;
 }
 
-.move-card img:hover {
+.movie-card img:hover {
   transform: scale(1.3);
 }
 
